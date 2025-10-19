@@ -12,7 +12,7 @@ openpyxl>=3.1.2        # escribir/leer Excel
 reportlab>=4.2.2       # exportar PDF
 
 # ---- Opcionales (descomenta si los usas) ----
-st-aggrid==0.3.4.post3  # tablas avanzadas en Streamlit
-sentence-transformers>=2.7.0  # embeddings (si activas modo PRO con embeddings)
-openai>=1.40.0          # rerank/LLM opcional si lo integras
-python-dotenv>=1.0.1    # cargar variables de entorno desde .env
+#st-aggrid==0.3.4.post3  # tablas avanzadas en Streamlit
+#sentence-transformers>=2.7.0  # embeddings (si activas modo PRO con embeddings)
+#openai>=1.40.0          # rerank/LLM opcional si lo integras
+#python-dotenv>=1.0.1    # cargar variables de entorno desde .env
