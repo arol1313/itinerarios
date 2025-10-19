@@ -1,18 +1,48 @@
-# Núcleo de la app
-streamlit>=1.33,<2.0
-pandas==2.2.2
-numpy>=1.26.4,<3.0
 
-# ESCO + utilidades
-requests>=2.32.3
-rapidfuzz>=3.9.6
 
 # Exportaciones
-openpyxl>=3.1.2        # escribir/leer Excel
-reportlab>=4.2.2       # exportar PDF
+openpyxl>=3.1.2
+# escribir/leer Excel
+reportlab>=4.2.2
+# exportar PDF
 
 # ---- Opcionales (descomenta si los usas) ----
-#st-aggrid==0.3.4.post3  # tablas avanzadas en Streamlit
-#sentence-transformers>=2.7.0  # embeddings (si activas modo PRO con embeddings)
-#openai>=1.40.0          # rerank/LLM opcional si lo integras
-#python-dotenv>=1.0.1    # cargar variables de entorno desde .env
+st-aggrid==0.3.4.post3
+# tablas avanzadas en Streamlit
+sentence-transformers>=2.7.0
+embeddings (si activas modo PRO con embeddings)
+openai>=1.40.0
+# rerank/LLM 
+opcional si lo integras
+python-dotenv>=1.0.1
+# cargar variables de entorno desde .env
+
+
+# Librerías principales
+streamlit>=1.37
+pandas>=2.2
+numpy>=1.26
+
+# Lectura y escritura de Excel
+openpyxl>=3.1
+xlsxwriter>=3.2
+
+# Utilidades generales
+requests>=2.31
+rapidfuzz>=3.9
+beautifulsoup4>=4.12
+
+# Manejo de fechas, rutas y expresiones regulares
+python-dateutil>=2.9
+pathlib>=1.0
+regex>=2023.12
+
+# Seguridad y normalización de texto
+html5lib>=1.1
+unicodedata2>=15.1
+
+# Logging y trazas
+traceback2>=1.4
+
+# Tipado y herramientas de desarrollo (opcional)
+typing-extensions>=4.10
