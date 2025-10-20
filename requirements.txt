@@ -1,32 +1,14 @@
-# --- Núcleo app ---
 streamlit==1.37.1
 pandas==2.2.2
 numpy==1.26.4
 requests==2.32.3
 rapidfuzz==3.9.6
-
-# --- Excel ---
 openpyxl==3.1.5
 xlsxwriter==3.2.0
-
-# --- PDF / imágenes ---
 reportlab==4.2.2
 Pillow==10.4.0
-
-# --- Parsing HTML ---
 beautifulsoup4==4.12.3
 lxml==5.3.0
-
-# --- Utilidades ---
 python-dateutil==2.9.0.post0
 regex==2024.7.24
-python-dotenv==1.0.1
-
-# --- Opcionales PRO ---
-sentence-transformers==2.7.0
-torch==2.3.1
-# Si torch falla en Cloud, prueba: torch==2.2.2 ; o comenta ambas líneas
-openai==1.43.0
-
-# --- Tablas avanzadas (opcional) ---
-streamlit-aggrid==0.3.4.post3
+# streamlit-aggrid==0.3.4.post3  # opcional
