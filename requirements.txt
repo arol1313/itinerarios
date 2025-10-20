@@ -1,48 +1,32 @@
+# --- Núcleo app ---
+streamlit==1.37.1
+pandas==2.2.2
+numpy==1.26.4
+requests==2.32.3
+rapidfuzz==3.9.6
 
+# --- Excel ---
+openpyxl==3.1.5
+xlsxwriter==3.2.0
 
-# Exportaciones
-openpyxl>=3.1.2
-# escribir/leer Excel
-reportlab>=4.2.2
-# exportar PDF
+# --- PDF / imágenes ---
+reportlab==4.2.2
+Pillow==10.4.0
 
-# ---- Opcionales (descomenta si los usas) ----
-st-aggrid==0.3.4.post3
-# tablas avanzadas en Streamlit
-sentence-transformers>=2.7.0
-embeddings (si activas modo PRO con embeddings)
-openai>=1.40.0
-# rerank/LLM 
-opcional si lo integras
-python-dotenv>=1.0.1
-# cargar variables de entorno desde .env
+# --- Parsing HTML ---
+beautifulsoup4==4.12.3
+lxml==5.3.0
 
+# --- Utilidades ---
+python-dateutil==2.9.0.post0
+regex==2024.7.24
+python-dotenv==1.0.1
 
-# Librerías principales
-streamlit>=1.37
-pandas>=2.2
-numpy>=1.26
+# --- Opcionales PRO ---
+sentence-transformers==2.7.0
+torch==2.3.1
+# Si torch falla en Cloud, prueba: torch==2.2.2 ; o comenta ambas líneas
+openai==1.43.0
 
-# Lectura y escritura de Excel
-openpyxl>=3.1
-xlsxwriter>=3.2
-
-# Utilidades generales
-requests>=2.31
-rapidfuzz>=3.9
-beautifulsoup4>=4.12
-
-# Manejo de fechas, rutas y expresiones regulares
-python-dateutil>=2.9
-pathlib>=1.0
-regex>=2023.12
-
-# Seguridad y normalización de texto
-html5lib>=1.1
-unicodedata2>=15.1
-
-# Logging y trazas
-traceback2>=1.4
-
-# Tipado y herramientas de desarrollo (opcional)
-typing-extensions>=4.10
+# --- Tablas avanzadas (opcional) ---
+streamlit-aggrid==0.3.4.post3
