@@ -1,5 +1,23 @@
 # app_planificador_abc.py
 # -*- coding: utf-8 -*-
+
+import importlib, subprocess, sys
+
+def ensure(pkg, spec=None):
+    try:
+        importlib.import_module(pkg)
+    except ImportError:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", spec or pkg])
+        importlib.invalidate_caches()
+        importlib.import_module(pkg)
+
+ensure("openpyxl", "openpyxl==3.1.5")
+
+
+
+
+
+
 import re, io, traceback, unicodedata, html
 from pathlib import Path
 from datetime import datetime
@@ -1829,3 +1847,4 @@ faltan_A = dfA[(dfA.get("cod_b","")=="") | (dfA.get("cod_a","")=="")]
 faltan_B = dfB[(dfB.get("cod_b","")=="") | (dfB.get("cod_c","")=="")]
 if (len(faltan_A) > 0) or (len(faltan_B) > 0):
     st.info("⚠️ Detectados posibles códigos faltantes en A/B. Si usas versiones 'fix_*', la app las prioriza.")
+
